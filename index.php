@@ -12,7 +12,7 @@
 <?php
 
 //incluimos ReadBeanPHP
-require './rb/rb.php';
+require 'rb.php';
 // Inicializamos la conexion al Servidor de MySQL
 R::setup( 'mysql:host=localhost;dbname=galeria','root', '' ); 
 
