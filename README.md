@@ -2,4 +2,4 @@
 Galería de Imagenes para API :
 - Subir Imagenes a Servidor con PHP
 - Codificamos/Decodificamos las imagenes con base64 
-- Usamos RerdBeanPHP para acceso a la BD de MySQL
+- Usamos RedBeanPHP para acceso a la BD de MySQL
