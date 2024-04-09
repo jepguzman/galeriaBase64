@@ -1,7 +1,7 @@
 <?php
 
 //incluimos ReadBeanPHP
-require './rb/rb.php';
+require 'rb.php';
 // Inicializamos la conexion al Servidor de MySQL
 R::setup( 'mysql:host=localhost;dbname=galeria','root', '' ); 
 
@@ -28,12 +28,12 @@ if (isset($_POST['subir'])) {
         {
             //Si la imagen es correcta en tamaño y tipo
             //Se intenta subir al servidor
-        if (move_uploaded_file($temp, 'images/'.$archivo)) 
+        if (move_uploaded_file($temp, $archivo)) 
         {
             //Mostramos el mensaje de que se ha subido co éxito
             echo '<div><b>Imagen codificada correctamente.</b></div>';
             // Ruta de la imagen (path)
-            $path = "images/$archivo";
+            $path = $archivo;
             // Extensión de la imagen
             $type = pathinfo($path, PATHINFO_EXTENSION);
             // Cargando la imagen
